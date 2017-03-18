@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="691.0" prefWidth="663.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MyController">
+   <center>
+      <ImageView fx:id="myImageView" fitHeight="468.0" fitWidth="464.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+   </center>
+   <bottom>
+      <AnchorPane prefHeight="150.0" prefWidth="663.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="originButton" layoutX="10.0" layoutY="66.0" mnemonicParsing="false" onAction="#showOriginalImage" prefHeight="44.0" prefWidth="114.0" text="original image" />
+            <Button fx:id="negativeButton" layoutX="140.0" layoutY="66.0" mnemonicParsing="false" onAction="#showNegativeImage" prefHeight="44.0" prefWidth="114.0" text="negative image" />
+            <Button fx:id="eqButton" layoutX="270.0" layoutY="66.0" mnemonicParsing="false" onAction="#equalization" prefHeight="44.0" prefWidth="114.0" text="equalization" />
+            <Button fx:id="histogramButton" layoutX="400.0" layoutY="66.0" mnemonicParsing="false" onAction="#showHistogram" prefHeight="44.0" prefWidth="114.0" text="originhistogram" />
+            <Button fx:id="eqhistogramButton" layoutX="530.0" layoutY="66.0" mnemonicParsing="false" onAction="#showEqhistogram" prefHeight="44.0" prefWidth="114.0" text="eqhistogram" />
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>
